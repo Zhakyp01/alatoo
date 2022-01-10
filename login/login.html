@@ -1,0 +1,30 @@
+<html>
+<head>
+ <link href = "css.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<script src="js.js"></script>
+<?php
+
+include "db_connect.php";
+//include "search.php";
+
+?>
+<div class="login-page">
+  <div class="form">
+    <form class="login-form">
+      <input type="text" placeholder="firstname"/>
+	  <input type="text" placeholder="lastname"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+    </form>
+  </div>
+</div>
+<?php
+
+$mysqli->close();
+
+?>
+</body>
+</html>
